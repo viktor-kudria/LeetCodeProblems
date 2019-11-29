@@ -3,7 +3,7 @@
 namespace LeetCodeProblems.Problems.Array
 {
     /// <summary>
-    /// Two Sum problem
+    /// 1. Two Sum problem
     /// https://leetcode.com/problems/two-sum/
     /// </summary>
     public class TwoSumProblem
