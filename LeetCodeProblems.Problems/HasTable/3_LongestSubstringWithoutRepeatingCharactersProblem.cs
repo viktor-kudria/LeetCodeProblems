@@ -2,6 +2,10 @@
 
 namespace LeetCodeProblems.Problems.HasTable
 {
+    /// <summary>
+    /// 3. Longest Substring Without Repeating Characters
+    /// https://leetcode.com/problems/longest-substring-without-repeating-characters/
+    /// </summary>
     public class LongestSubstringWithoutRepeatingCharactersProblem
     {
         public int LengthOfLongestSubstring(string s)
