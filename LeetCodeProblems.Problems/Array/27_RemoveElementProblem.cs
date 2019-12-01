@@ -8,34 +8,18 @@
     {
         public int RemoveElement(int[] nums, int val)
         {
-            if (nums.Length == 0) return 0;
+            int i = 0;
 
-            int indexToPut = nums.Length - 1;
-            int length = 0;
-            for (int i = 0; i < nums.Length && i <= indexToPut; i++)
+            for (int j = 0; j < nums.Length; j++)
             {
-                if (nums[i] == val)
+                if (nums[j] != val)
                 {
-                    while (nums[indexToPut] == val)
-                    {
-                        if (indexToPut == i) return length;
-
-                        indexToPut--;
-                    }
-
-                    nums[indexToPut] = nums[indexToPut] + nums[i];
-                    nums[i] = nums[indexToPut] - nums[i];
-                    nums[indexToPut] = nums[indexToPut] - nums[i];
-
-                    length++;
-                }
-                else
-                {
-                    length++;
+                    nums[i] = nums[j];
+                    i++;
                 }
             }
 
-            return length;
+            return i;
         }
     }
 }
